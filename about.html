@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Stephen's Affordable Computer Services</title>
+<link rel="stylesheet" href="style.css">
+<h1 id="mainTitle"> Stephen's Affordable Computer Services </h1>
+ 
+  
+ <!-- Scripts -->
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ <script type="text/javascript">
+	$(document).ready(function() {
+// Tooltip only Text
+		$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+	}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+	}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+	});
+	});
+</script>
+  
+
+
+<!-- End Scripts -->
+  
+  
+</head>
+
+
+<body>
+
+<nav class="navbar">
+	<ul class="ul">
+		<li><a href="landing.html">Home</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="services.html">Services Offered</a></li>
+		<li><a href="resources.html">Resources & Learning</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul >
+</nav>
+<center>
+<h2 >About Us</h2>
+<hr />
+<div class="divStyle">
+	<p> I'm Stephen! I started working with computers when I was in 10th grade and from there, I've only
+	gone up. </p>
+	<p> I've always had an interest in technology, but until HFM BOCES located in Johnstown, New York. From there,
+	I started my own business and went to FMCC for Computer Information Systems in hopes to grow my knowledge and skills.
+	Once I decided where I wanted to go, I shifted my scopes to SUNY Brockport where I majored in Computer Information Systems
+	but as a Bachelors of Science. Below are a list of classes and skills I have obtained throughout my experience.<b> I encourage
+	anyone interested in computers to play and learn on your own! Experience is key as is practice when it comes to programming.</b>
+
+ </p>
+ <p><b>Hover your mouse over a class to learn more about its contents!</b> </p>
+ <br />
+ 
+<h2> My Skill Set & Classes </h2>
+</div>
+<ul >
+
+    <li class="skillsListItem" ><a href="#" title="Basic VB coding" class="masterTooltip">Visual Basic(2012)</a></li>
+    <li class="skillsListItem"><a href="#" title="Java Development and OOP" class="masterTooltip">Java Programming</a></li>
+    <li class="skillsListItem"><a href="#" title="Creating databases based on the design forms (1NF,2NF..) and organizing said data to become tables" class="masterTooltip">Database Design</a></li>
+		
+	<li class="skillsListItem"><a href="#" title="SQL Statements such as insert, delete, update along with reports and views" class="masterTooltip">Database Programming in SQL</a></li>
+    <li class="skillsListItem"><a href="#" title="Languages involving PHP, CSS, XML, HTML5, JavaScript, JQuery" class="masterTooltip">Web Development</a></li>
+    <li class="skillsListItem"><a href="#" title="Basic network knowledge such as DHCP, LANS, MANS,WANS, Wireless Technologies" class="masterTooltip">Networking</a></li>
+	<li class="skillsListItem"><a href="#" title="Design a sytsem from scratch using tools and software" class="masterTooltip">System Design & Analysis</a></li>
+    <li class="skillsListItem"><a href="#" title="Manage a team of programmers to get to an end product" class="masterTooltip">System Implementation & Management</a></li>
+    <li class="skillsListItem"><a href="#" title="Analyze a business and create an IT plan to develop their business and increase revenues along with efficiency" class="masterTooltip">IT For Development</a></li>
+	<li class="skillsListItem"><a href="#" title="Create intricate Excel documents with powerful formulas for problem solving" class="masterTooltip">Decision Support & Expert Systems (Advanced MS Excel)</a></li>
+    <li class="skillsListItem"><a href="#" title="Basic to advanced CISCO IOS commands and A+ certification knowledge" class="masterTooltip">CISCO Networking Exploration (CCNA/A+)</a></li>
+   
+        
+                         
+</ul>
+
+</center>
+<br />
+<br />
+</body>
+</html>
+
+

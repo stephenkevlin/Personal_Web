@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Stephen's Affordable Computer Services</title>
+<link rel="stylesheet" href="style.css">
+<h1 id="mainTitle"> Stephen's Affordable Computer Services </h1>
+<nav class="navbar">
+	<ul>
+		<li><a href="landing.html">Home</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="services.html">Services Offered</a></li>
+		<li><a href="resources.html">Resources & Learning</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</nav>
+
+<h2 align="center">Welcome to Our Homepage </h2>
+<hr />
+<script language="JavaScript">
+
+var i = 0;
+var imageList = new Array();
+ 
+imageList[0] = "images/image1.jpg";
+imageList[1] = "images/image2.jpg";
+imageList[2] = "images/image3.png";
+
+function swapImage()
+{
+   document.slide.src = imageList[i];
+   if(i < imageList.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+
+</script>
+
+<center>
+<img height="200" name="slide" src="image" width="400" />
+</center>
+
+</head>
+
+<body onload="swapImage()">
+<br />
+<br />
+<br />
+<center>
+
+<script language="JavaScript"> 
+var myDate = new Date(); 
+var dayTime = "(518-848-6862)"; 
+var nightTime = "stephen.kevlin@gmail.com";  
+  
+/* Before 12 */
+if ( myDate.getHours() < 12 )  
+{ 
+    document.write("If you need to contact us or require troubleshooting assistance contact: <b>" + dayTime); 
+} else  /* 12-6*/
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
+{ 
+    document.write("If you need to contact us or require troubleshooting assistance contact: <b>" + dayTime); 
+} else  /* After 6 */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 
+{ 
+    document.write("If you need to contact us or require troubleshooting assistance contact: <b>" + nightTime); 
+} else  /* Problem */
+{ 
+    document.write("Error: Clock is broken!"); 
+} 
+ 
+</script> 
+
+</center>
+</body>
+</html>
+
+

@@ -1,0 +1,128 @@
+/*CSS for entire website external file */
+body {
+background-image: url("images/bg.jpg");
+}
+
+#mainTitle {   /* ID selector used to target a single specific element with a unique id */
+    display: block;
+    margin: 20px auto;
+	font-size: 300%;
+	text-align: center;
+}
+
+.divStyle {
+	
+	margin-left: 100px;
+    margin-right: 100px;
+	text-align:center;
+	font-size: 20px;
+}
+
+ .skillsListItem {
+	list-style: none;
+	padding: 10px;
+	background-color: #aaa;
+	border: white 4px solid;
+	width: 300px;
+	text-align: center;
+ }
+ 
+ .tableImageSizer {
+	 width: 200px;
+     height: 100px;
+ }
+ .tableStyle{
+	 color: orange;
+	 font-weight: bold;
+ }
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+ul a{
+	
+	 text-decoration: none;
+	 color: inherit;
+
+}
+
+h3 {
+	text-align:center;
+}
+
+button {
+	margin-left: 30px;
+	background-color:green;
+	
+}
+/* NAVIGATION*/
+
+/* Create background box and position */
+nav {
+  width: 50%;
+  margin: 0 auto;
+  background: #fff;
+  
+  box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+
+/* style the actual list members */
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #555;
+} 
+
+
+/* animation on hover over */
+nav.navbar ul li a {
+  position: relative;
+}
+nav.navbar ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
+}
+
+/* End Navigation */
+
